@@ -1,94 +1,96 @@
-/* Универсальный селектор */
-* {
-  color: rgb(0, 38, 255);
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg: #2f303a;
 }
 
-/* Селектор элемента (тега) */
-p {
-  color: brown;
+/* основной цвет текста (прозрачный) #757575  */
+
+/* вторичный цвет текста (черный) #212121 */
+
+/* белый текст + фон (хедер) #ffffff */
+
+/* второй фон #f5f4fA (наша команда) */
+
+/* фон футера + (эффиктивные решения) #2f303a */
+
+/* акцент #2196f3 */
+
+/* Добавление в Body: основной цвет и шрифт текста + фон */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 
-/* Селектор идентификатора */
-#text {
-  color: antiquewhite;
+/* .logo-web, logo-studio Логотип сине-черный */
+.logo-web {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
-/* <!-- Селектор класса --> */
-.text {
-  font-size: 30px;
-}
-
-/* Два селектора класса */
-.text.secondary {
-  letter-spacing: 10px;
-}
-
-/* <!-- Селектор [атрибута+значения] --> */
-a[href="https://www.google.com/"]
-{
-  text-decoration: overline;
-}
-
-/* <!-- Селектор атрибута --> */
-a[title] {
-  text-transform: uppercase;
-}
-
-/* <!-- Селектор потомка - т.е. все линки которые находятся в линк ферст --> */
-.list-first .link {
-  text-decoration: none;
-}
-/* или */
-.list-second a {
-  font-size: 30px;
-}
-
-/* <!-- Селектор ребенка - т.е. сначала заходим в ребенка, а потом уже указываем элемент или атрибут--> */
-.list-third > li p {
-  text-shadow: 5px, 3px, 2px, #00ff00;
-}
-
-/* Элемент + селектор класса (для увеличения специфичности например) */
-a.link {
-  font-style: italic;
-}
-
-/* ********************************** */
-
-/* Псевдоклассы (состояния) */
-/* :hover эффект при наведении*/
-.link:hover {
+.logo-studio {
   color: black;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
-/* :focus эффукт при табуляции на клавиатуре или удержании ЛКМ*/
-.link:focus {
-  background: #ff0;
+/* .list Убираем маркеры с нужных нам списков */
+.list {
+  list-style: none;
 }
 
-/* :visited эффект посещенного сайта*/
-.link:visited {
-  color: blueviolet;
+/* site-nav цвет списка ссылок */
+.site-nav .link {
+  color: var(--title-text-color);
 }
 
-/* :active эффект при нажатии на кнопку */
-button:active {
-  color: black;
+/* site-nav цвет ссылки при наведении */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
-/* Псевдоэлементы */
-/* ::first-letter - первая буква в абзаце */
-p::first-letter {
-  color: blue;
-  font-size: 20px;
+/* current - Позиционирование открытой ссылки на текущей странице*/
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
-/* ::first-line - офрмление первой линии (строки) */
-p::first-line {
-  color: #00ff00;
+/* задается цвет списку контактов в шапке */
+.contact .link {
+  color: var(--primary-text-color);
 }
 
-/* ::section -оформления диапазона текста, который выделяется курсором (цвет+фон) */
-p::selection {
-  color: darkorange;
+/* задается цвет подсвечивания ссылки при наведении курсором */
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+
+  /* задается позиционирование открытой ссылки на текущей странице */
+}
+/* Задается цвет заголовку Героя */
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* section применение к однотипным секциям, в которых одинаковый цвет заголовка */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* button применение формления к кнопке */
+.hero > button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
