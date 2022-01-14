@@ -1,102 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Предоставление услуг Веб разработки" />
+  <title>Веб студия</title>
+  <!-- Добавление шрифтов Google-fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+  rel="stylesheet">
+  <!-- Ссылка на CSS-файл -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
 
-<!-- Modern-normalize - нормализирует встроенный стиль по умолчанию-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.css">
-
-  <!-- Встроенная таблица стилей - через Тег style в шапке проекта -->
-  <style>
-    p {
-      color: blue;
-    }
-  </style>
-
-<!-- Применение стиля шрифта из Google.Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet" />
-    <style>
-      .text.primary {
-        font-family: 'Tangerine', cursive;
-      }
-    </style>
-
-  <!-- Внешняя таблица стилей через ссылку на css-файл-->
-    <link rel="stylesheet" href="./css/styles.css">
-
-  </head>
 <body>
-  <p>Lorem ipsum dolor sit amet.</p>
-
-  <!-- Селектор идентификатора - нельзя применять один идентификатор на 2 элемента
-(уникальность) -->
-  <p id="text">Lorem ipsum dolor sit.</p> -->
-  <p id="text">Lorem ipsum dolor sit.</p>
-
-<!-- Встроенный стиль через добавление атрибута style в Тег -->
-  <p style="color: crimson;">Hello</p>
-
-  <!-- Селектор класса: два отдельных селектора пишутся без тире -->
-  <p class="text primary">Lorem ipsum dolor sit.</p>
-  <p class="text secondary">Lorem ipsum dolor sit.</p>
-
-  <!-- Селектор [атрибута+значения] -->
-<a href="https://www.google.com/">ссылка</a>
-
-<br>
-
-<!-- Селектор атрибута -->
-<a href="https://www.google.com/new" title="google">ссылка</a>
-
-<!-- Селектор потомка -->
-<ul class="list-first">
-  <li>
-    <a href=""class="link">ссылка</a>
-  </li>
-  <li>
-    <a href=""class="link">ссылка</a>
-  </li>
-</ul>
-
-<ul class="list-second">
-  <li>
-    <a href="" class="link">ссылка</a>
-  </li>
-  <li>
-    <a href=""class="link">ссылка</a>
-  </li>
-  <li>
-    <a href="new" class="link">ссылка</a>
-  </li>
-</ul>
-
-<!-- Селектор ребенка -->
-<ul class="list-third">
-  <li>
-    <a href="" class="link">ссылка</a>
-    <p>Lorem, ipsum dolor.</p>
-  </li>
-  <li>
-    <a href="" class="link">ссылка</a>
-  </li>
-</ul>
-
-
-<button
-  style="background: #fdeaa8;
-  width: 80px;
-  height: 40px;
-  border-radius: 5px;
-  box-shadow: 0px 1px 3px;
-  font-size: 20px;"
->ok</button>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  Eos sint nisi voluptas doloremque hic temporibus eum labore illum eveniet beatae,
-  quaerat illo magni sit accusamus explicabo!
-  Consequuntur ducimus repellat harum.</p>
+  <!-- Содержание -->
+  <header>
+    <!-- Шапка-Навигация -->
+    <nav>
+      <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+      <ul class="site-nav list">
+        <li><a href="" class="link current">Студия</a></li>
+        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- Шапка-контакты -->
+    <ul class="contact list">
+      <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+      <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+    </ul>
+  </header>
+  <main>
+    <!-- Герой -->
+    <section class="hero">
+      <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
+      <button type="button">Заказать услугу</button>
+    </section>
+    <!-- 1-я секция - Приоритеты в работе -->
+    <section class="section">
+      <h2>Наши приоритеты при работе с клиентом</h2>
+      <ul>
+        <li>
+          <h3 class="section-title">Внимание к деталям</h3>
+          <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li>
+        <li>
+          <h3 class="section-title">Пунктуальность</h3>
+          <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+        <li>
+          <h3 class="section-title">Планирование</h3>
+          <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        <li>
+          <h3 class="section-title">Современные технологии</h3>
+          <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- 2-я секция - Чем мы занимаемся -->
+    <section class="section">
+      <h2 class="section-title">Чем мы занимаемся</h2>
+      <ul class="versions-list">
+        <li>
+          <img src="./images/Десктопная версия.jpg" width="370" alt="Разработка версии для компьютера ">
+        </li>
+        <li>
+          <img src="./images/Мобильная версия.jpg" width="370" alt="Разаботка мобильной версии">
+        </li>
+        <li>
+          <img src="./images/Планшет.jpg" width="370" alt="Разработка весии для планшета">
+        </li>
+      </ul>
+    </section>
+    <!-- 3-я секция - Наша команда -->
+    <section class="section">
+      <h2 class="section-title">Наша команда</h2>
+      <ul class="team-list">
+        <li>
+          <ul>
+            <li><img src="./images/Игорь.jpg" alt="Дизайнер продукции"></li>
+            <li>
+              <h3 class="section-title">Игорь Демьяненко</h3>
+            </li>
+            <li>
+              <p lang="en">Product Designer</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><img src="./images/Ольга.jpg" alt="Фронтенд-разработчик"></li>
+            <li>
+              <h3 class="section-title">Ольга Репина</h3>
+            </li>
+            <li>
+              <p lang="en">Product Designer</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><img src="./images/Николай.jpg" alt="Маркетолог"></li>
+            <li>
+              <h3 class="section-title">Николай Тарасов</h3>
+            </li>
+            <li>
+              <p lang="en">Marketing</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li><img src="images/Михаил.jpg" alt="Дизайнер пользовательского интерфейса"></li>
+            <li>
+              <h3 class="section-title">Михаил Ермаков</h3>
+            </li>
+            <li>
+              <p lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- Футер -->
+  <footer>
+    <div>
+      <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+      <address>г. Киев, пр-т Леси Украинки, 26</address>
+      <address><a href="mailto:info@example.com">info@example.com</a></address>
+      <address><a href="tel:+1112223344"></a>(111) 222 33 44</address>
+    </div>
+  </footer>
 </body>
+
 </html>
