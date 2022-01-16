@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg: #2f303a;
+  --footer-secondary: rgba(255, 255, 255, 0.6);
 }
 
 /* основной цвет текста (прозрачный) #757575  */
@@ -28,16 +29,21 @@ body {
 }
 
 /* .logo-web, logo-studio Логотип сине-черный */
+a.logo {
+  text-decoration: none;
+}
+
 .logo-web {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo-studio {
+/* WebStudio - черный */
+nav > a {
   color: black;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
@@ -58,6 +64,7 @@ body {
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* site-nav цвет ссылки при наведении */
@@ -78,6 +85,7 @@ body {
   font-size: 14px;
   line-height: 1, 14px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* задается цвет подсвечивания ссылки при наведении курсором */
@@ -87,18 +95,102 @@ body {
 
   /* задается позиционирование открытой ссылки на текущей странице */
 }
-/* Задается цвет заголовку Героя */
+/* h1 Задается цвет заголовку Героя */
 .hero-title {
-  color: var(--title-text-color);
+  color: var(--primary-white-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* section применение к однотипным секциям, в которых одинаковый цвет заголовка */
+/* фон Героя */
+.solutions {
+  background-color: var(--footer-bg);
+}
+
+/* h2 section применение к однотипным секциям, в которых одинаковый цвет заголовка */
 .section-title {
   color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  /* letter-spacing: 0.03em; */
+}
+
+/* фон к section */
+.masters {
+  background-color: var(--secondary-bg-color);
+}
+
+/* h3 оформление-1 */
+.feature-list .title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* h3 оформление -2 */
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18px;
+  text-align: center;
+}
+
+/* p - оформление-1 */
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+/* p - оформление-2 */
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
 }
 
 /* button применение формления к кнопке */
 .hero > button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.adress-list {
+  text-decoration: none;
+}
+
+/* футер - белый цвет текста */
+.adress-list > adress {
+  color: var(--primary-white-color);
+}
+
+/* фон футер */
+.down {
+  background-color: var(--footer-bg);
+}
+
+/* адресс-город цвет */
+.down .city {
+  color: var(--primary-white-color);
+}
+
+/* лого Studio -белый цвет */
+.adress-list > a {
+  color: var(--primary-white-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
