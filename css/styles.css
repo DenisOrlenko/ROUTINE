@@ -33,7 +33,7 @@ a.logo {
   text-decoration: none;
 }
 
-.logo-web {
+.accent {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
@@ -43,7 +43,7 @@ a.logo {
 }
 
 /* WebStudio - черный */
-nav > a {
+a .accent.black {
   color: black;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
@@ -166,13 +166,9 @@ nav > a {
   letter-spacing: 0.06em;
 }
 
+/* футер отмена подчеркивания */
 .adress-list {
   text-decoration: none;
-}
-
-/* футер - белый цвет текста */
-.adress-list > adress {
-  color: var(--primary-white-color);
 }
 
 /* фон футер */
@@ -185,12 +181,35 @@ nav > a {
   color: var(--primary-white-color);
 }
 
-/* лого Studio -белый цвет */
-.adress-list > a {
+/* лого Studio - белый цвет */
+a .accent.white {
   color: var(--primary-white-color);
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+
+/* Город - оформление */
+.down .city {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* почта и телефон - оформление */
+.down .mail,
+.down .phone {
+  color: var(--footer-secondary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* mail - серый цвет */
+address > a {
+  color: var(--footer-secondary);
 }
