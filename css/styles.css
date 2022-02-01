@@ -9,6 +9,9 @@
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --button-border: rgba(0, 0, 0, 0.15);
+  /* отступ между элементами списка (кроме меню навигации) */
+  --list-gap: 30px;
+  /* -1 * var(--list-gap) = -30px  */
 }
 
 /* основной цвет текста (прозрачный) #757575  */
@@ -54,6 +57,7 @@ h3 {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /* -----------------Утилиты--------------- */
@@ -160,7 +164,7 @@ a .accent.black {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -247,7 +251,7 @@ a .accent.black {
 }
 
 .feature-list .item + .item {
-  margin-left: 30px;
+  margin-left: var(--list-gap);
 }
 
 /* h3 оформление-1 */
@@ -271,12 +275,12 @@ a .accent.black {
 
 .versions-list {
   display: flex;
-  margin-left: -30px;
+  margin-left: -1 * var(--list-gap);
 }
 
 .versions-list .item {
-  margin-left: 30px;
-  flex-basis: calc (100% - 30px / 4);
+  margin-left: var(--list-gap);
+  flex-basis: calc (100% - var(--list-gap) / 4);
 }
 
 /* --------------------SECTION-4------------------- */
@@ -285,24 +289,34 @@ a .accent.black {
   background-color: var(--secondary-bg-color);
 }
 
-.masters .container {
-  display: flex;
-}
-
 .masters img {
   margin-bottom: 30px;
 }
 
 /* -----------------team---------------- */
+.team-list .item * {
+  outline: 1px solid tomato;
+}
+
 .team-list {
   display: flex;
+  margin-left: -1 * var(--list-gap);
+}
+
+.team-list .item {
+  flex-basis: calc(100% / 4 - var(--list-gap));
+  margin-left: var(--list-gap);
+}
+
+.team-list-content {
+  padding-bottom: 30px;
 }
 
 /* h3 оформление -2 */
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
   text-align: center;
 }
 
