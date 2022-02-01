@@ -9,6 +9,9 @@
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --button-border: rgba(0, 0, 0, 0.15);
+  --border-under-header: #ececec;
+  --border-under-item: #eeeeee;
+
   /* отступ между элементами списка (кроме меню навигации) */
   --list-gap: 30px;
   /* -1 * var(--list-gap) = -30px  */
@@ -67,8 +70,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
+}
 
-  outline: 2px solid tomato;
+.section {
+  margin-bottom: 94px;
 }
 
 /* .list Убираем маркеры с нужных нам списков */
@@ -91,6 +96,10 @@ img {
 }
 
 /* -----------------HEADER-------------------------- */
+.page-header {
+  border-bottom: 1px solid var(--border-under-header);
+}
+
 /* .logo-web - синий логотип */
 a.logo {
   display: block;
@@ -220,6 +229,7 @@ a .accent.black {
   padding: 10px 32px;
   box-shadow: var(--button-border);
   border-radius: 4px;
+  cursor: pointer;
 
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
@@ -241,9 +251,6 @@ a .accent.black {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-.section.feature {
-  margin-bottom: 94px;
 }
 
 .feature-list {
@@ -269,10 +276,6 @@ a .accent.black {
 }
 
 /* --------------------SECTION-3------------------- */
-.versions {
-  margin-bottom: 94px;
-}
-
 .versions-list {
   display: flex;
   margin-left: -1 * var(--list-gap);
@@ -297,10 +300,6 @@ a .accent.black {
 }
 
 /* -----------------team---------------- */
-.team-list .item * {
-  outline: 1px solid tomato;
-}
-
 .team-list {
   display: flex;
   margin-left: -1 * var(--list-gap);
@@ -393,8 +392,16 @@ address .phone {
 }
 
 /* ------------------------------------------- */
-/* ------------------ПОРТФОЛИО---------------- */
+/* ------------------ПОРТФОЛИО-MAIN--------------- */
 /* ------------------------------------------- */
+.directions-list * {
+  outline: 1px solid tomato;
+}
+
+.directions-list {
+  display: flex;
+  justify-content: center;
+}
 
 /* button применение формления к кнопке */
 
@@ -419,6 +426,16 @@ address .phone {
 .directions button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+}
+
+.example-list {
+  display: flex;
+}
+
+.example-item {
+  border-bottom: 1px solid var(--border-under-item);
+  border-left: 1px solid var(--border-under-item);
+  border-right: 1px solid var(--border-under-item);
 }
 
 /* -------------------------------- */
