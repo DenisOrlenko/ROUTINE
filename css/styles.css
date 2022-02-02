@@ -32,6 +32,10 @@
 /* акцент #2196f3 */
 
 /*  */
+.item *,
+.container {
+  outline: 1px solid tomato;
+}
 
 /* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
@@ -59,14 +63,13 @@ h3 {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /* -----------------Утилиты--------------- */
 /* контейнер офрмление */
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
@@ -280,14 +283,11 @@ a .accent.black {
 /* --------------------SECTION-3------------------- */
 .versions-list {
   display: flex;
-  margin-left: -1 * var(--list-gap);
+  margin-left: -30px;
 }
 
-.versions-list .item {
-  flex-basis: calc (100% - var(--list-gap) / 4);
-}
-
-.versions-list .item + .item {
+.versions-list > .item {
+  flex-basis: calc(100% / 3 - var(--list-gap));
   margin-left: var(--list-gap);
 }
 
@@ -297,22 +297,21 @@ a .accent.black {
   background-color: var(--secondary-bg-color);
 }
 
-.masters img {
+/* -----------------team---------------- */
+.team-list img {
   margin-bottom: 30px;
+  max-width: 100%;
 }
 
-/* -----------------team---------------- */
 .team-list {
   display: flex;
-  margin-left: -1 * var(--list-gap);
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--list-gap));
 }
 
-.team-list .item + .item {
-  margin-left: var(--list-gap);
-}
-
-.team-list .item {
+.team-list > .item {
   flex-basis: calc(100% / 4 - var(--list-gap));
+  margin-left: var(--list-gap);
 }
 
 .team-list-content {
@@ -396,10 +395,6 @@ address .phone {
 /* ------------------------------------------- */
 /* ------------------ПОРТФОЛИО-MAIN--------------- */
 /* ------------------------------------------- */
-.directions-list * {
-  outline: 1px solid tomato;
-}
-
 .directions-list {
   display: flex;
   justify-content: center;
@@ -434,35 +429,38 @@ address .phone {
   background-color: var(--accent-color);
 }
 
-.example-content {
-  margin-top: 20px;
-  margin-bottom: 24px;
+/* example */
+.example-item .example-content {
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.example-item img {
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  min-width: 100%;
 }
 
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1 * var(--list-gap);
-  margin-bottom: -1 * var(--list-gap);
+  margin-left: -30px;
 }
 
-.example-list .example-item + .example-item {
-  margin-left: var(--list-gap);
-  margin-bottom: var(--list-gap);
-}
-
-.example-item {
-  flex-basis: calc(100% / 3 - var(--list-gap);
+.example-list > .example-item {
+  flex-basis: calc(100% / 3 - var(--list-gap) - 3px);
+  margin-left: 30px;
 
   border-bottom: 1px solid var(--border-under-item);
   border-left: 1px solid var(--border-under-item);
   border-right: 1px solid var(--border-under-item);
-}
 
+  text-align: center;
+}
 /* -------------------------------- */
 .example-list .example-title {
   color: var(--title-text-color);
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
