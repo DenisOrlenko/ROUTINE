@@ -74,6 +74,7 @@ img {
 
 .section {
   margin-bottom: 94px;
+  margin-top: 94px;
 }
 
 /* .list Убираем маркеры с нужных нам списков */
@@ -239,6 +240,7 @@ a .accent.black {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border-style: none;
 }
 
 /* --------------------SECTION-2------------------- */
@@ -401,15 +403,17 @@ address .phone {
 .directions-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.directions-list .directions-item + .directions-item {
+  margin-left: 8px;
 }
 
 /* button применение формления к кнопке */
+.directions .button {
+  padding: 6px 22px;
 
-.directions .directions-item-first,
-.directions .directions-item-second,
-.directions .directions-item-third,
-.directions .directions-item-fourth,
-.directions .directions-item-fifth {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
@@ -419,20 +423,37 @@ address .phone {
   line-height: 1.6;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
 }
 
 /* Кнопка - наведеие и фокус */
-.directions button:hover,
-.directions button:focus {
+.directions .button:hover,
+.directions .button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
 
+.example-content {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
 .example-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -1 * var(--list-gap);
+  margin-bottom: -1 * var(--list-gap);
+}
+
+.example-list .example-item + .example-item {
+  margin-left: var(--list-gap);
+  margin-bottom: var(--list-gap);
 }
 
 .example-item {
+  flex-basis: calc(100% / 3 - var(--list-gap);
+
   border-bottom: 1px solid var(--border-under-item);
   border-left: 1px solid var(--border-under-item);
   border-right: 1px solid var(--border-under-item);
