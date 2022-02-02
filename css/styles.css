@@ -448,13 +448,15 @@ address .phone {
   margin-left: -30px;
 }
 
-.example-list > .example-item {
-  flex-basis: calc(100% / 3 - var(--list-gap) - 3px);
-  margin-left: 30px;
-
+.example-item .example-content {
   border-bottom: 1px solid var(--border-under-item);
   border-left: 1px solid var(--border-under-item);
   border-right: 1px solid var(--border-under-item);
+}
+
+.example-list > .example-item {
+  flex-basis: calc(100% / 3 - var(--list-gap));
+  margin-left: 30px;
 
   text-align: center;
 }
