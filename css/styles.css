@@ -33,7 +33,9 @@
 
 /*  */
 .item *,
-.container {
+.city *,
+.mail-phone *,
+.logo * {
   outline: 1px solid tomato;
 }
 
@@ -100,12 +102,11 @@ h3 {
   border-bottom: 1px solid var(--border-under-header);
 }
 
-/* .logo-web - синий логотип */
-a.logo {
+/* .logo-web - в навигации */
+.main-nav .logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
   margin-right: 93px;
 
   text-decoration: none;
@@ -331,18 +332,30 @@ a .accent.black {
 
 /* -----------------------ФУТЕР---------------- */
 /* фон - футер */
-footer {
+.adress-list {
   background-color: var(--footer-bg-color);
 }
 
-footer .logo {
+.adress-list.down .container {
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-list .logo {
   display: block;
   margin-bottom: 20px;
+
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 /* Studio - белый цвет */
-a .accent.white {
+.logo .accent.white {
   color: var(--secondary-text-color);
 }
 
@@ -364,7 +377,6 @@ address .mail {
 }
 
 address .phone {
-  margin-bottom: 60px;
   display: block;
 }
 
@@ -426,22 +438,21 @@ address .phone {
 }
 
 /* example */
-.example-item .example-content {
-  padding-top: 20px;
-  padding-bottom: 24px;
-}
-
 .example-item img {
-  min-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--list-gap));
 }
 
 .example-item .example-content {
+  padding-top: 20px;
+  padding-bottom: 24px;
+
   border-bottom: 1px solid var(--border-under-item);
   border-left: 1px solid var(--border-under-item);
   border-right: 1px solid var(--border-under-item);
@@ -449,12 +460,14 @@ address .phone {
 
 .example-list > .example-item {
   flex-basis: calc(100% / 3 - var(--list-gap));
-  margin-left: 30px;
+  margin-left: var(--list-gap);
 
   text-align: center;
 }
 /* -------------------------------- */
 .example-list .example-title {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -463,4 +476,12 @@ address .phone {
 
 .example-list .example-text {
   line-height: 1.87;
+}
+
+.example-item * {
+  outline: 1px solid tomato;
+}
+
+.example-list {
+  outline: 1px solid tomato;
 }
