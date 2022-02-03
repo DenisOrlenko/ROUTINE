@@ -31,14 +31,6 @@
 
 /* акцент #2196f3 */
 
-/*  */
-.item *,
-.city *,
-.mail-phone *,
-.logo * {
-  outline: 1px solid tomato;
-}
-
 /* Добавление в Body: основной цвет и шрифт текста + фон */
 body {
   color: var(--primary-text-color);
@@ -259,6 +251,10 @@ a .accent.black {
   display: flex;
 }
 
+.feature-list .item {
+  flex-basis: calc(100% - 4 * var(--list-gap) / 4);
+}
+
 .feature-list .item + .item {
   margin-left: var(--list-gap);
 }
@@ -280,12 +276,16 @@ a .accent.black {
 /* --------------------SECTION-3------------------- */
 .versions-list {
   display: flex;
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--list-gap));
 }
 
 .versions-list > .item {
   flex-basis: calc(100% / 3 - var(--list-gap));
   margin-left: var(--list-gap);
+}
+
+.item > img {
+  max-width: 100%;
 }
 
 /* --------------------SECTION-4------------------- */
@@ -476,12 +476,4 @@ address .phone {
 
 .example-list .example-text {
   line-height: 1.87;
-}
-
-.example-item * {
-  outline: 1px solid tomato;
-}
-
-.example-list {
-  outline: 1px solid tomato;
 }
