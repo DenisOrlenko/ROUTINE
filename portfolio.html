@@ -28,17 +28,30 @@
         <a class="logo" href="./index.html">Web<span class="accent black">Studio</span></a>
         <ul class="site-nav list">
           <li class="item"><a href="./index.html" class="link">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+          <li class="item"><a href="" class="link current">Портфолио</a></li>
           <li class="item"><a href="./contacts.html" class="link">Контакты</a></li>
         </ul>
       </nav>
       <!-- КОНТАКТЫ -->
       <ul class="contact list">
-        <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-        <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <li class="item-contacts item">
+          <a href="mailto:info@devstudio.com" class="link">
+            <svg class="icon-contacts" width="16" height="12">
+              <use href="./images/svg/sprite.svg#icon-envelope-hover"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="item-contacts item">
+          <a href="tel:+380961111111" class="link">
+            <svg class="icon-contacts" width="10" height="16">
+              <use href="./images/svg/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
       </ul>
-      <!-- HEADER - ПО ДАНИЛКО (РОДИТЕЛЬ-РЕБЕНОК) -->
+    </div>
   </header>
+
   <main>
     <section class="section directions">
       <div class="container">
@@ -47,15 +60,19 @@
           <li class="directions-item">
             <button class="directions-item-all button">Все</button>
           </li>
+
           <li class="directions-item">
             <button class="directions-item-web button">Веб-сайты</button>
           </li>
+
           <li class="directions-item">
             <button class="directions-item-app button">Приложения</button>
           </li>
+
           <li class="directions-item">
             <button class="directions-item-design button">Дизайн</button>
           </li>
+
           <li class="directions-item">
             <button class="directions-item-market button">Маркетинг</button>
           </li>
@@ -63,12 +80,16 @@
 
         <ul class="example-list list">
           <li class="example-item">
+            <a href="">
             <img src="./images/portfolio/Технокряк-img(1).jpg" width="370" height="294" alt="Технокряк">
             <div class="example-content">
               <h2 class="example-title">Технокряк</h2>
               <p class="example-text">Веб-сайт</p>
             </div>
+            </a>
           </li>
+
+
           <li class="example-item">
             <img src="./images/portfolio/Постер-img (2).jpg" width="370" height="294" alt="Постер">
             <div class="example-content">
@@ -76,6 +97,7 @@
               <p class="example-text">Дизайн</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/Seafood-img (3).jpg" width="370" height="294" alt="Ресторан Сифуд">
             <div class="example-content">
@@ -83,6 +105,7 @@
               <p class="example-text">Приложение</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/Prime-img (4).jpg" width="370" height="294" alt="Проект Прайм">
             <div class="example-content">
@@ -90,6 +113,7 @@
               <p class="example-text">Маркетинг</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/Boxes-img (5).jpg" width="370" height="294" alt="Проект Боксес">
             <div class="example-content">
@@ -97,6 +121,7 @@
               <p class="example-text">Приложение</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/Inspiration-img (6).jpg" width="370" height="294" alt="Вдохновение без границ">
             <div class="example-content">
@@ -104,6 +129,7 @@
               <p class="example-text">Веб-сайт</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/Limited-img (7).jpg" width="370" height="294" alt="Издание Ограниченная Серия">
             <div class="example-content">
@@ -111,6 +137,7 @@
               <p class="example-text">Дизайн</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/LAB-img (8).jpg" width="370" height="294" alt="Проект ЛАБ">
             <div class="example-content">
@@ -118,6 +145,7 @@
               <p class="example-text">Маркетинг</p>
             </div>
           </li>
+
           <li class="example-item">
             <img src="./images/portfolio/Growing-img (9).jpg" width="370" height="294" alt="Растущий бизнес">
             <div class="example-content">
@@ -129,18 +157,67 @@
     </section>
   </main>
   <!-- Футер -->
-  <footer class="adress-list down">
+  <footer class="page-footer">
     <div class="container">
-      <a class="logo" href="./index.html">Web<span class="accent white">Studio</span></a>
-      <address class="city">
-        <a class="link"
-          href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
-          target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
-      </address>
-      <address class="mail-phone">
-        <a href="mailto:info@example.com" class="mail link">info@example.com</a>
-        <a href="tel:+380991111111" class="phone link">+38 099 111 11 11</a>
-      </address>
+      <div class="logo-title-thumb">
+        <a class="logo" href="./index.html">Web<span class="accent white">Studio</span></a>
+        <h2 class="footer-social-title">присоединяйтесь</h2>
+      </div>
+
+      <div class="footer-contacts-socials">
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list list">
+            <li class="city-item item">
+              <a class="city-link link"
+                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&ll=50.42732700000001%2C30.538092&z=17"
+                target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+
+            <li class="mail-item item">
+              <a href="mailto:info@example.com" class="mail-link link">info@example.com</a>
+            </li>
+
+            <li class="phone-item item">
+              <a href="tel:+380991111111" class="phone-link link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="footer-social-list list">
+          <li class="footer-social-item item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/svg/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer-social-item item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/svg/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer-social-item item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/svg/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer-social-item item">
+            <a class="footer-social-link link" href="">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </footer>
 </body>
