@@ -529,6 +529,11 @@ a .accent.black {
   border-radius: 50%;
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
 .footer-social-icon {
   fill: var(--secondary-text-color);
 }
@@ -580,6 +585,7 @@ a .accent.black {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--list-gap));
+  margin-bottom: calc(-1 * var(--list-gap));
 }
 
 .example-item .example-content {
@@ -594,6 +600,7 @@ a .accent.black {
 .example-list > .example-item {
   flex-basis: calc(100% / 3 - var(--list-gap));
   margin-left: var(--list-gap);
+  margin-bottom: var(--list-gap);
 
   text-align: center;
 }
