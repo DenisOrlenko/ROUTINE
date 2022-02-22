@@ -282,6 +282,31 @@ a .accent.black {
   letter-spacing: 0.06em;
   border-style: none;
 }
+/* ---------------------------------------------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--primary-bg-color);
+}
 
 /* --------------------SECTION-2------------------- */
 /* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
@@ -623,6 +648,9 @@ a .accent.black {
 .directions .button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* example */
@@ -653,6 +681,10 @@ a .accent.black {
   margin-bottom: var(--list-gap);
 
   text-align: center;
+
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* -------------------------------- */
 .example-list .example-title {
@@ -675,6 +707,7 @@ a .accent.black {
   text-decoration: none;
 }
 
+/* overlay */
 .example-thumb {
   position: relative;
 }
@@ -683,12 +716,10 @@ a .accent.black {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%;
-  height: 100%; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   opacity: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease;
 }
 
 .example-link:hover .example-overlay {
@@ -703,4 +734,31 @@ a .accent.black {
   color: var(--secondary-text-color);
 
   background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(0);
 }
+
+/* ------------------------- */
+/* .example-thumb:hover .example-overlay {
+  transform: translateY(0);
+}
+
+.example-overlay {
+  transform: translateY(10%);
+  transition: transform 250ms ease;
+}
+
+.example-thumb:hover .example-content {
+  position: absolute;
+  z-index: -1;
+} */
+/* ------------------------- */
+/* .example-thumb {
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+
+.example-link:hover .example-thumb {
+  transform: translateY(0);
+
+} */
