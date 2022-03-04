@@ -800,28 +800,3 @@ a .accent.black {
 
   transform: translateY(0);
 }
-
-/* ------------------------- */
-/* .example-thumb:hover .example-overlay {
-  transform: translateY(0);
-}
-
-.example-overlay {
-  transform: translateY(10%);
-  transition: transform 250ms ease;
-}
-
-.example-thumb:hover .example-content {
-  position: absolute;
-  z-index: -1;
-} */
-/* ------------------------- */
-/* .example-thumb {
-  transform: translateY(100%);
-  transition: transform 250ms ease;
-}
-
-.example-link:hover .example-thumb {
-  transform: translateY(0);
-
-} */
