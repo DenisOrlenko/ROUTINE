@@ -371,6 +371,7 @@
       <div class="logo-title-thumb">
         <a class="logo" href="./index.html">Web<span class="accent white">Studio</span></a>
         <h2 class="footer-social-title">присоединяйтесь</h2>
+        <label class="sign-up-text" for="sign-up">Подпишитесь на рассылку</label>
       </div>
 
       <div class="footer-contacts-socials">
@@ -425,7 +426,17 @@
             </a>
           </li>
         </ul>
+
+        <div class="group-sign-up" role="group">
+          <input class="email" type="text" placeholder="Email" id="sign-up">
+          <button class="sign-up-button" type="submit">Подписаться
+            <!-- <svg>
+                      <use href=""></use>
+                </svg> -->
+          </button>
+        </div>
       </div>
+    </div>
 
     </div>
   </footer>
@@ -437,6 +448,44 @@
           <use href="./images/svg/sprite.svg#icon-modal-button"></use>
         </svg>
       </button>
+      <p>Оставьте свои данные, мы вам перезвоним</p>
+
+      <form class="modal-form" action="#">
+        <ul class="form-list">
+          <li class="form-item">
+            <label class="form-label">
+              Имя
+              <input class="form-text" type="text">
+            </label>
+          </li>
+
+          <li class="form-item">
+            <label class="form-label">
+              Телефон
+              <input class="form-text" type="tel">
+            </label>
+          </li>
+
+          <li class="form-item">
+            <label class="form-label">
+              Почта
+              <input class="form-text" type="email">
+            </label>
+          </li>
+        </ul>
+
+        <div class="comment">
+          <label class="comment-label" for="comment">Комментарий</label>
+          <textarea class="comment-text" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+        </div>
+
+        <div class="agree-checkbox">
+          <input class="agree-checkbox" type="checkbox" name="" id="">
+          <label for="agree-checkbox">Соглашаюсь с рассылкой и принимаю</label>
+          <a href="">Условия договора</a>
+        </div>
+        <button class="submit">Отправить</button>
+      </form>
     </div>
 
 <script src="./js/modal.js"></script>
