@@ -355,6 +355,16 @@ a .accent.black {
   fill: var(--accent-color);
 }
 
+.form-item {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* ----------------------form------------------------ */
 .form-list {
   padding: 0;
@@ -692,7 +702,7 @@ a .accent.black {
 }
 
 /* -------------form-footer------------------ */
-.group-sign-up {
+.sign-up-group {
   /* position: absolute;
   left: 520px;
   top: 106px; */
@@ -737,6 +747,7 @@ a .accent.black {
   line-height: 1.25px;
 
   color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-bg-color);
 }
 
 .sign-up-button {
