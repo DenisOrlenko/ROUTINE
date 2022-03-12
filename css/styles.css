@@ -355,32 +355,61 @@ a .accent.black {
   fill: var(--accent-color);
 }
 
-.form-item {
-  position: relative;
+.modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #212121;
 }
 
-.form-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+/* -----------modal-form--------- */
 
-/* ----------------------form------------------------ */
-.form-list {
+.modal-form-list {
   padding: 0;
 }
 
-.form-item {
-  margin-bottom: 10px;
+.modal-form-item {
+  position: relative;
 
   list-style: none;
 }
 
-.form-text {
+.modal-form-input:focus ~ .modal-form-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16px;
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.modal-form-input {
+  position: relative;
+
+  padding-left: 42px;
+
   width: 100%;
 }
 
-.comment-text {
+.modal-form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+}
+
+/* ----------------------form-comment------------------------ */
+
+.comment-textarea {
   width: 100%;
 
   resize: none;
@@ -702,7 +731,7 @@ a .accent.black {
 }
 
 /* -------------form-footer------------------ */
-.sign-up-group {
+.sign-up-field {
   /* position: absolute;
   left: 520px;
   top: 106px; */
@@ -713,7 +742,7 @@ a .accent.black {
   align-items: flex-start;
 }
 
-.sign-up {
+/* .sign-up {
   display: flex;
 
   width: 358px;
@@ -723,9 +752,9 @@ a .accent.black {
   line-height: 1.14px;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-}
+} */
 
-.sign-up-text {
+.sign-up-label {
   margin-bottom: 0;
   margin-left: 151px;
 
@@ -737,7 +766,7 @@ a .accent.black {
   color: var(--secondary-text-color);
 }
 
-.email {
+.sign-up-input {
   width: 358px;
   height: 50px;
 
@@ -748,12 +777,19 @@ a .accent.black {
 
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--footer-bg-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
 .sign-up-button {
   /* position: absolute;
   top: 106px;
   left: 1000px; */
+
+  position: relative;
 
   width: 200px;
   min-height: 50px;
@@ -769,6 +805,16 @@ a .accent.black {
 
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.sign-up-icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
 }
 
 /* ------------------------------------------- */
