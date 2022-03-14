@@ -370,21 +370,32 @@ a .accent.black {
 
 .modal-form-list {
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .modal-form-item {
   position: relative;
 
+  margin-bottom: 10px;
+
   list-style: none;
 }
 
-.modal-form-input:focus ~ .modal-form-icon {
-  fill: var(--accent-color);
+.modal-form-item:last-child {
+  margin-bottom: 0;
 }
 
-.modal-form-label {
-  margin-bottom: 4px;
+/* .modal-form-input:focus ~ .modal-form-icon {
+  fill: var(--accent-color);
+} */
 
+/* .modal-form-item:focus-within > .modal-form-icon {
+  fill: blue;
+  background-color: red;
+} */
+
+.modal-form-label {
   font-size: 12px;
   line-height: 1.16px;
 
@@ -393,12 +404,27 @@ a .accent.black {
   color: var(--primary-text-color);
 }
 
+/* .modal-form-label:focus + .modal-form-input {
+  border-color: #2196f3;
+} */
+
+.modal-form-label:focus + .modal-form-input {
+  /* fill: blue; */
+  /* background-color: red; */
+  /* background-color: green; */
+  border: 5px solid blue;
+}
+
 .modal-form-input {
   position: relative;
-
-  padding-left: 42px;
-
+  padding: 11px 12px 11px 42px;
   width: 100%;
+
+  margin-top: 4px;
+}
+
+.modal-form-input:focus {
+  border: #2196f3;
 }
 
 .modal-form-icon {
@@ -408,13 +434,55 @@ a .accent.black {
 }
 
 /* ----------------------form-comment------------------------ */
+.comment-label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
 
 .comment-textarea {
   width: 100%;
 
+  padding: 12px 16px 12px 16px;
+  margin-bottom: 20px;
+
   resize: none;
 }
 
+/* ----------------agree-checkbox + button------------ */
+.agree-checkbox {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71px;
+  text-align: center;
+}
+
+.agree-link {
+  color: var(--accent-color);
+}
+
+.send-modal-button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.send-modal-button {
+  min-width: 200px;
+  min-height: 50px;
+
+  padding: 10px 55px 10px 56px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /* --------------------SECTION-2------------------- */
 /* применение ЗАГОЛОВКА к однотипным секциям, в которых одинаковый цвет заголовка */
 .section-title {
