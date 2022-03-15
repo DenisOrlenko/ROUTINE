@@ -408,23 +408,12 @@ a .accent.black {
   border-color: #2196f3;
 } */
 
-.modal-form-label:focus + .modal-form-input {
-  /* fill: blue; */
-  /* background-color: red; */
-  /* background-color: green; */
-  border: 5px solid blue;
-}
-
 .modal-form-input {
   position: relative;
   padding: 11px 12px 11px 42px;
   width: 100%;
 
   margin-top: 4px;
-}
-
-.modal-form-input:focus {
-  border: #2196f3;
 }
 
 .modal-form-icon {
@@ -449,7 +438,62 @@ a .accent.black {
 }
 
 /* ----------------agree-checkbox + button------------ */
+.agree-checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71px;
+  text-align: center;
+}
+
 .agree-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .agree-checkbox-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: red;
+} */
+
+.agree-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.agree-checkbox-label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  align-items: center;
+
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.agree-checkbox:checked + .agree-checkbox-label::before {
+  background-color: var(--accent-color);
+  background-image: url('../images/svg/icon-checkbox.svg');
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.agree-checkbox-text {
   margin-bottom: 30px;
 
   font-size: 14px;
@@ -462,11 +506,14 @@ a .accent.black {
 }
 
 .send-modal-button-group {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .send-modal-button {
+  margin: 0 auto;
+  display: block;
+
   min-width: 200px;
   min-height: 50px;
 
