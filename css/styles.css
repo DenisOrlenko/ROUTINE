@@ -404,7 +404,6 @@ a .accent.black {
 } */
 
 .modal-form-input {
-  /* position: relative; */
   padding: 11px 12px 11px 42px;
   width: 100%;
 
@@ -476,57 +475,36 @@ a .accent.black {
   overflow: hidden;
 }
 
-/* .agree-checkbox-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  background-color: red;
-} */
-
 .agree-checkbox-label {
   display: flex;
   align-items: center;
 }
 
-.agree-checkbox-label::before {
-  content: '';
-  display: inline-block;
+.agree-icon-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 16px;
   height: 15px;
 
-  margin-right: 8px;
+  margin-right: 7px;
+}
 
-  align-items: center;
-
+.agree-icon {
+  fill: var(--primary-bg-color);
   border: 1px solid #000000;
   border-radius: 4px;
 }
 
-.agree-checkbox:checked + .agree-checkbox-label::before {
-  background-color: var(--accent-color);
-  background-image: url('../images/svg/icon-checkbox.svg');
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--accent-color);
+.agree-checkbox:checked + .agree-checkbox-label .agree-icon {
   fill: var(--accent-color);
-}
-
-.agree-checkbox-text {
-  margin-bottom: 30px;
-
-  font-size: 14px;
-  line-height: 1.71px;
-  text-align: center;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .agree-link {
   color: var(--accent-color);
-}
-
-.send-modal-button-group {
-  /* display: flex;
-  justify-content: center; */
 }
 
 .send-modal-button {
