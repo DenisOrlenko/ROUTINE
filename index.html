@@ -429,7 +429,7 @@
 
         <form class="sign-up-form" action="#">
           <div class="sign-up-field" role="group">
-            <input class="sign-up-input" type="text" placeholder="Email" id="sign-up">
+            <input class="sign-up-input" name="sign-up-field" type="text" placeholder="Email" id="sign-up">
             <button class="sign-up-button" type="submit">Подписаться
               <svg class="sign-up-icon" width="24" height="24">
                 <use href="./images/svg/icons.svg#icon-send-button" ></use>
@@ -455,27 +455,27 @@
       <form class="modal-form" action="#">
         <ul class="modal-form-list">
           <li class="modal-form-item">
-            <label class="modal-form-label" for="modal-form-item">Имя</label>
-            <input class="modal-form-input" id="modal-form-item" type="text">
+            <label class="modal-form-label" for="modal-form-name">Имя</label>
+            <input class="modal-form-input" name="modal-form-name" id="modal-form-name" type="text">
             <svg class="modal-form-icon" width="18" height="18" >
               <use href="./images/svg/icons.svg#icon-person" ></use>
             </svg>
           </li>
 
           <li class="modal-form-item">
-            <label class="modal-form-label" for="modal-form-item">Телефон</label>
-            <input class="modal-form-input" id="modal-form-item" type="tel">
-              <svg class="modal-form-icon" width="18" height="18">
-                <use href="./images/svg/icons.svg#icon-phone"></use>
-              </svg>
+            <label class="modal-form-label" for="modal-form-tel">Телефон</label>
+            <input class="modal-form-input" name="modal-form-tel" id="modal-form-tel" type="tel">
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-phone"></use>
+            </svg>
           </li>
 
           <li class="modal-form-item">
-            <label class="modal-form-label" for="modal-form-item">Почта</label>
-            <input class="modal-form-input" id="modal-form-item" type="mail">
-              <svg class="modal-form-icon" width="18" height="18">
-                <use href="./images/svg/icons.svg#icon-email"></use>
-              </svg>
+            <label class="modal-form-label" for="modal-form-email">Почта</label>
+            <input class="modal-form-input" name="modal-form-email" id="modal-form-email" type="email">
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/svg/icons.svg#icon-email"></use>
+            </svg>
           </li>
         </ul>
 
@@ -485,13 +485,19 @@
         </div>
 
         <div class="agree-checkbox-group">
-          <input class="agree-checkbox" type="checkbox" name="agree-checkbox" id="agree-checkbox">
-          <!-- <span class="agree-checkbox-icon"></span> -->
-          <!-- <span class="agree-checkbox-text"></span> -->
-          <label class="agree-checkbox-label" for="agree-checkbox">Соглашаюсь с рассылкой и принимаю</label>
-          <pre> </pre>
-          <a href="" class="agree-link link" >Условия договора</a>
+          <input class="agree-checkbox" name="agree-checkbox-new"
+          type="checkbox"  id="agree-checkbox-new">
+          <label class="agree-checkbox-label" for="agree-checkbox-new">
+            <span class="agree-icon-checkbox">
+              <svg class="agree-icon" width="16" height="15">
+                <use href="./images/svg/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>Соглашаюсь с рассылкой и принимаю
+            <pre> </pre>
+            <a href="" class="agree-link link">Условия договора</a>
+          </label>
         </div>
+
         <div class="send-modal-button-group">
           <button class="send-modal-button" type="submit">Отправить</button>
         </div>
